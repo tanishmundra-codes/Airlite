@@ -1,0 +1,53 @@
+<% layout("/layouts/boilerplate")%>
+
+  <body>
+    <div class="row mt-3"></div>
+    <div class="col-8 offset-2 ">
+      <h3>Edit listing</h3>
+      <form method="POST" action="/listings/<%= listing._id %>?_method=PUT" novalidate class="needs-validation"
+        enctype="multipart/form-data">
+        
+        <div class="mb-3">
+          <label for="title" class="form-label">Title</label>
+          <input name="listing[title]" required class="form-control" type="text" value="<%= listing.title %>" />
+        </div>
+
+        <div class="mb-3">
+          <label for="description" class="form-label">Description</label>
+          <textarea class="form-control" required name="listing[description]"><%= listing.description %></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label for="price" class="form-label">Price</label>
+          <input name="listing[price]" required class="form-control" type="number" value="<%= listing.price %>" />
+        </div>
+
+        <div class="mb-3">
+          Original listing image <br>
+          <img src= "<%= originalImageUrl %>" class="img-fluid" style="max-width: 200px;">
+        </div>
+
+        <div class="mb-3">
+          <label for="image" class="form-label">Upload new image</label>
+          <input name="listing[image]" required class="form-control" type="file" />
+        </div>
+
+        <div class="row">
+          <div class="mb-3 col-md-4">
+            <label for="location" class="form-label">Location</label>
+            <input name="listing[location]" required class="form-control" type="text" value="<%= listing.location %>" />
+          </div>
+
+          <div class="mb-3 col-md-8">
+            <label for="country" class="form-label">Country</label>
+            <input name="listing[country]" required class="form-control" type="text" value="<%= listing.country %>" />
+          </div>
+        </div>
+
+        <button class="btn btn-dark edit-btn mt-3">Edit</button>
+        <br /><br />
+    </div>
+    </div>
+    </form>
+
+  </body>
