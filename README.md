@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # BookBnB 🏡
 
 BookBnB is a replica of the popular Airbnb platform, developed as a practice project to improve front-end and/or full-stack development skills. The website allows users to explore listings, view property details, and simulate booking accommodations.
