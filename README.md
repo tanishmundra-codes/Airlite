@@ -67,12 +67,6 @@ A full-stack Airbnb clone built with **Node.js**, **Express.js**, and **EJS**, d
    cd airlite
 ---
 
-## 📌 Notes
-
-This is an ongoing project. I'm actively working on it daily and adding new features as I continue learning and growing as a developer.
-
----
-
 ## 🧑‍💻 Author
 
 **Tanish Mundra**  
